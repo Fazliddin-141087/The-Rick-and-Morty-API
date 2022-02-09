@@ -16,7 +16,7 @@ class RvAdapters(var list: ArrayList<Result>,var myOnClickListener: MyOnClickLis
             itemRickAndMortyBinding.desc.text = result.gender
 
             itemRickAndMortyBinding.root.setOnClickListener {
-                myOnClickListener.onMyItemClick(result,result.id!!)
+                myOnClickListener.onMyItemClick(result.id!!)
             }
         }
     }
@@ -32,7 +32,7 @@ class RvAdapters(var list: ArrayList<Result>,var myOnClickListener: MyOnClickLis
     override fun getItemCount(): Int = list.size
 
     interface MyOnClickListener{
-        fun onMyItemClick(result: Result,id: Int)
+        fun onMyItemClick(id: Int)
     }
 
 }
