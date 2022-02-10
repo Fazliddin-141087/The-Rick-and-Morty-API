@@ -14,7 +14,6 @@ import uz.mobiler.therickmorty.databinding.FragmentHomeBinding
 import uz.mobiler.therickmorty.models.Result
 import uz.mobiler.therickmorty.viewmodels.AppViewModel
 
-
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
